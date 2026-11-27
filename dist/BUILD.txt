@@ -1,6 +1,6 @@
 withnate-etsy-photo-check v0.1.0
 js   25956 bytes
-css  2479 bytes
+css  2657 bytes
 
 Drop both into the site's assets directory and reference them from the
 page. The script is a plain IIFE - no module, no defer requirement beyond

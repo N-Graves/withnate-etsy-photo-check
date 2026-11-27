@@ -5,9 +5,9 @@
 /* src/style.css */
 .ep {
   --ep-line: rgba(51, 23, 11, 0.14);
-  --ep-good: #2f6b52;
-  --ep-warn: #8a5a10;
-  --ep-bad: #832305;
+  --ep-good: #3a9d6f;
+  --ep-warn: #d08a1c;
+  --ep-bad: #d0482a;
   display: grid;
   gap: 1.25rem;
 }
@@ -48,7 +48,8 @@
   margin: 0;
 }
 .ep-status.is-error {
-  color: var(--ep-bad);
+  padding-left: 0.5rem;
+  border-left: 3px solid var(--ep-bad);
 }
 .ep-controls {
   display: grid;
@@ -87,7 +88,8 @@
 }
 .ep-warn {
   margin: 0;
-  color: var(--ep-warn);
+  padding-left: 0.5rem;
+  border-left: 3px solid var(--ep-warn);
   font-size: 0.85rem;
 }
 .ep-note {
@@ -108,16 +110,18 @@
 }
 .ep-verdict {
   margin: 0;
+  padding-left: 0.6rem;
+  border-left: 4px solid transparent;
   font-weight: 600;
 }
 .ep-verdict.is-good {
-  color: var(--ep-good);
+  border-left-color: var(--ep-good);
 }
 .ep-verdict.is-ok {
-  color: var(--ep-warn);
+  border-left-color: var(--ep-warn);
 }
 .ep-verdict.is-small {
-  color: var(--ep-bad);
+  border-left-color: var(--ep-bad);
 }
 .ep-actions {
   display: flex;
