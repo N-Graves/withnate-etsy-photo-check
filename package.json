@@ -1,0 +1,47 @@
+{
+  "name": "withnate-etsy-photo-check",
+  "version": "0.1.0",
+  "private": true,
+  "description": "See how your Etsy listing photo will be cropped in search, and check it is big enough to zoom. Runs entirely in the browser.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "vitest run",
+    "lint": "tsc --noEmit",
+    "smoke": "npm run build && node scripts/smoke.mjs",
+    "demo": "npm run build && node scripts/serve.mjs",
+    "prove": "node scripts/prove-guards.mjs"
+  },
+  "dependencies": {
+    "@nasdigitaluk/withnate-tool-core": "^0.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "esbuild": "^0.24.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  },
+  "author": "Nathan Graves",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N-Graves/withnate-etsy-photo-check.git"
+  },
+  "bugs": {
+    "url": "https://github.com/N-Graves/withnate-etsy-photo-check/issues"
+  },
+  "homepage": "https://github.com/N-Graves/withnate-etsy-photo-check#readme",
+  "keywords": [
+    "etsy",
+    "listing-photo",
+    "thumbnail",
+    "crop",
+    "browser",
+    "client-side",
+    "privacy",
+    "withnate"
+  ]
+}

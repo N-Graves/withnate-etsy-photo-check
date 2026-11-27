@@ -1,0 +1,32 @@
+      <div class="ep" data-ep>
+        <div class="ep-drop" data-ep-drop>
+          <p><strong>Drop your listing photo here</strong></p>
+          <label class="ep-file-label">
+            Choose a file
+            <input type="file" accept="image/*" />
+          </label>
+          <p class="ep-drop-hint">Or paste one from your clipboard. It never leaves this page.</p>
+        </div>
+
+        <p class="ep-status" data-ep-status hidden></p>
+        <div data-ep-summary></div>
+
+        <div class="ep-controls" data-ep-controls hidden>
+          <label class="ep-field">
+            <span>Move the crop left or right</span>
+            <input type="range" min="0" max="100" value="50" data-ep-focus-x />
+          </label>
+          <label class="ep-field">
+            <span>Move the crop up or down</span>
+            <input type="range" min="0" max="100" value="50" data-ep-focus-y />
+          </label>
+        </div>
+
+        <div class="ep-crops" data-ep-crops></div>
+
+        <div class="ep-actions">
+          <a class="ep-button" data-ep-download hidden>Download the 4:3 crop</a>
+          <button type="button" class="ep-button" data-ep-reset hidden>Check another photo</button>
+        </div>
+        <p class="ep-key">The dashed line marks 10% in from each edge. Keep the important part of your photo inside it.</p>
+      </div>
